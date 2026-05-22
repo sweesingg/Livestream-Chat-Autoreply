@@ -18,7 +18,8 @@ As such, model needs to be optimised based on:
 - Community Growth
 - Stream Flow
 
-* Point to note: If stream session has low number of viewers, ALL viewers should be entertained unless they're negative viewers.
+*NOTE:*
+If stream session has low number of viewers, ALL viewers should be entertained unless they're negative viewers.
 
 ## Priorities
 ### High value gifts must be acknowledged
@@ -41,7 +42,13 @@ To ensure that the replies are not robotic, suggestive replies will appear on th
 Nonetheless, streamers have the option to fully automate the reply, although they might be subjected to more non-humanlike replies.
 
 ## Filtering Strategy
-
+### Rule-based filtering + LLM Replies
+Step 1: Have a rule engine to score the messages
+| Message           |  Score  | 
+| ----------------- | ------- | 
+| High Value Gift | 100 |
+| Normal Gift | 60 |
+| Low Value Gift | 30 |
 
 
 
