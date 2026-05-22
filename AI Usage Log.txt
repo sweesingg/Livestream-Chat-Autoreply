@@ -3,4 +3,21 @@
 2. Analyse these texts. Show me some of the replies that should be generate such that it would not sound like a chatbot.
 Add in mixes of Indonesian and English in casual conversion and with energy.
 
-3. Show me examples of how the flow should be like, using Rule-based filtering + LLM Replies
+3. Suggest some tones that will make the reply more energetic, friendly and engaging.
+
+4. Show me examples of how the flow should be like, using Rule-based filtering + LLM Replies
+
+5. What files do I need?
+
+
+
+# AI Usage Log
+
+## Prompt v1
+Generate a casual livestream response...
+
+## Prompt v2
+Make replies shorter and mix Indonesian + English...
+
+## Prompt v3
+Avoid sounding like customer support...

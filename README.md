@@ -38,18 +38,31 @@ More for keeping the viewers entertained and engaged, keeping the session fun. L
 To be ignored as they creates toxicity and negative vibes in the session, resulting in the stream being less welcoming and lesser viewers. Unless worsened, best to be ignored.
 
 ## Anti Robotic Replies
-To ensure that the replies are not robotic, suggestive replies will appear on the streamer's screen, allowing the streamer to select which texts they want to reply to the chat. This serves as a shortcut, as well as the streamer him/herself ensuring that the replies are good. For further development, these suggestive replies can be changed to customisable, allowing users to make minimal changes to it.
+To ensure that the replies are not robotic, suggestive replies will appear on the streamer's screen, allowing the streamer to select which texts they want to reply to the chat. This serves as a shortcut, as well as having the streamer ensuring that the replies are good. 
+
+Furthermore, these suggestive replies can be changed to customisable, allowing users to make minimal changes to it.
 Nonetheless, streamers have the option to fully automate the reply, although they might be subjected to more non-humanlike replies.
 
+Ultimately, authenticity is the key for such replies.
 ## Filtering Strategy
 ### Rule-based filtering + LLM Replies
-Step 1: Have a rule engine to score the messages
+#### Step 1: Have a rule engine to score the messages
 | Message           |  Score  | 
 | ----------------- | ------- | 
 | High Value Gift | 100 |
 | Normal Gift | 60 |
-| Low Value Gift | 30 |
+| Whale Viewer | 40 |
+| New Viewer | 30 |
+| Unanswered | 20 |
+| Requests | 10 |
+| Negative Viewer | -30 |
 
+Prioritising gifts, whale users and new viewers. The rest takes lower priorities as it does not add monetization value, although they are crucial to maintain the stream flow.
+
+#### Step 2: Weigh and generate replies only for the top 3 messages
+Requirements for replies:
+- Mix of Indonesian + English 
+- Playful and warm
 
 
 

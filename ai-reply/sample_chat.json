@@ -1,0 +1,49 @@
+[
+  {
+    "user": "JakartaBoy",
+    "type": "regular",
+    "gift": "no",    
+    "message": "suaranya bagus banget kak! 🔥"
+  },
+  {
+    "user": "SitiMusic",
+    "type": "regular",
+    "gift": "no",    
+    "ongoing_request": "yes", 
+    "message": "kak request lagu Raisa - Kali Kedua dong 🙏"
+  },
+  {
+    "user": "Ahmed_KSA",
+    "type": "whale",
+    "gift": "yes",
+    "gift_value": 500,
+    "ongoing_request": "yes",   
+    "message": "can you sing something in arabic?"
+  },
+  {
+    "user": "newuser_2910",
+    "type": "new_user",
+    "gift": "no",    
+    "message": "hi everyone! first time here ❤️"
+  },
+  {
+    "user": "xXx_ProGamer",
+    "type": "regular",
+    "gift": "no",    
+    "message": "boring stream tbh",
+    "is_toxic": "yes"
+  },
+  {
+    "user": "GiftKing_MY",
+    "type": "whale",
+    "gift": "no",
+    "ongoing_request": "yes",   
+    "message": "I'll gift if you sing Sheila on 7"
+  },
+  {
+    "user": "SilentFan",
+    "type": "regular",
+    "gift": "no",    
+    "message": "❤️❤️❤️"
+  }
+]
