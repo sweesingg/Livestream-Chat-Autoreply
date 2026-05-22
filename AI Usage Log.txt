@@ -1,0 +1,4 @@
+1. Elaborate more on the different AI System Designs
+
+2. Analyse these texts. Show me some of the replies that should be generate such that it would not sound like a chatbot.
+Add in mixes of Indonesian and English in casual conversion and with energy.
