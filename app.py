@@ -2,10 +2,21 @@ import json
 from scorer import score_message
 from openai import OpenAI
 from prompts import SYSTEM_PROMPT
+from dotenv import load_dotenv
+import os
 
-client = OpenAI(api_key="YOUR_API_KEY")
+load_dotenv()
 
-with open("sample_chat.json") as f:
+#print(os.getenv("OPENAI_API_KEY"))  # Check if the API key is loaded correctly
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+#models = client.models.list()
+
+#for model in models.data:
+#   print(model.id)
+
+with open("sample_chat.json", "r", encoding="utf-8") as f:
     chats = json.load(f)
 
 # score messages
@@ -19,7 +30,7 @@ top_messages = sorted(chats, key=lambda x: x["score"], reverse=True)[:3]
 for msg in top_messages:
 
     response = client.chat.completions.create(
-        model="gpt-4.1-mini",
+        model="gpt-5.4-mini",
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": msg["message"]}

@@ -65,18 +65,18 @@ Requirements for replies:
 - Playful and warm
 
 
-
-
-
 ## How to use:
-1. 
-(TEXT HERE)
+### 1. Create a ".env" file
+Create a '.env' file in the root folder
 
+### 2. ENTER API KEY
+Inside the '.env' file, put in the following:
+OPENAI_API_KEY=your_key_here
 
-2.
-(TEXT HERE)
+### 3. Install Dependencies
+Run the following:
+pip install -r requirements.txt
 
-
-
-3.
-(TEXT HERE)
+### 4. Run app.py
+- Open CMD/Bash
+- Enter "python app.py"
