@@ -2,7 +2,7 @@
 For streamers to reply effectively and as real as possible
 
 ## Context
-Streamers reply to about 8% of chat messages.
+Streamers reply to about 8% of chat messages.<br>
 Only 42% of gifts get acknowledged within 30 seconds — the goal is 80%+.
 
 ## Introduction
@@ -39,11 +39,12 @@ To be ignored as they creates toxicity and negative vibes in the session, result
 
 ## Anti Robotic Replies
 To ensure that the replies are not robotic, suggestive replies will appear on the streamer's screen, allowing the streamer to select which texts they want to reply to the chat. This serves as a shortcut, as well as having the streamer ensuring that the replies are good. 
-
-Furthermore, these suggestive replies can be changed to customisable, allowing users to make minimal changes to it.
+<br>
+Furthermore, these suggestive replies can be changed to customisable, allowing users to make minimal changes to it.<br>
 Nonetheless, streamers have the option to fully automate the reply, although they might be subjected to more non-humanlike replies.
-
+<br>
 Ultimately, authenticity is the key for such replies.
+
 ## Filtering Strategy
 ### Rule-based filtering + LLM Replies
 #### Step 1: Have a rule engine to score the messages
@@ -56,7 +57,7 @@ Ultimately, authenticity is the key for such replies.
 | Unanswered | 20 |
 | Requests | 10 |
 | Negative Viewer | -30 |
-
+<br>
 Prioritising gifts, whale users and new viewers. The rest takes lower priorities as it does not add monetization value, although they are crucial to maintain the stream flow.
 
 #### Step 2: Weigh and generate replies only for the top 3 messages
@@ -70,11 +71,11 @@ Requirements for replies:
 Create a '.env' file in the root folder
 
 ### 2. ENTER API KEY
-Inside the '.env' file, put in the following:
+Inside the '.env' file, put in the following:<br>
 OPENAI_API_KEY=your_key_here
 
 ### 3. Install Dependencies
-Run the following:
+Run the following: <br>
 pip install -r requirements.txt
 
 ### 4. Run app.py
