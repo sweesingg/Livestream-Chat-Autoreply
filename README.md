@@ -44,40 +44,30 @@ More for keeping the viewers entertained and engaged, keeping the session fun. L
 ### Negative/Toxic Viewers
 To be ignored as they creates toxicity and negative vibes in the session, resulting in the stream being less welcoming and lesser viewers. Unless worsened, best to be ignored.
 
-## Anti Robotic Replies
-To ensure that the replies are not robotic, suggestive replies will appear on the streamer's screen, allowing the streamer to select which texts they want to reply to the chat. This serves as a shortcut, as well as having the streamer ensuring that the replies are good. 
-<br><br>
-Furthermore, these suggestive replies can be changed to customisable, allowing users to make minimal changes to it.<br>
-Nonetheless, streamers have the option to fully automate the reply, although they might be subjected to more non-humanlike replies.
-<br><br>
-Ultimately, authenticity is the key for such replies.
-
 ## System Architecture
-Chat Stream
-↓
-Rule-Based Scoring
-↓
-Priority Ranking
-↓
-Top 3 Message Selection
-↓
-Single Batched LLM Request
-↓
+Chat Stream<br>
+↓<br>
+Rule-Based Scoring<br>
+↓<br>
+Priority Ranking<br>
+↓<br>
+Top 3 Message Selection<br>
+↓<br>
+Single Batched LLM Request<br>
+↓<br>
 AI Reply Generation
 
 ## Filtering Strategy
 ### Rule-based filtering + LLM Replies
 Instead of sending every livestream message to the LLM, the system first applies lightweight rule-based scoring.
-<br><br>
-
+<br>
 This reduces:
 - API cost
 - latency
 - unnecessary LLM calls
-
-<br><br>
-
+<br>
 Only shortlisted high-priority messages are sent to the LLM for response generation.
+
 #### Rule engine to score the messages
 | Message           |  Score  | 
 | ----------------- | ------- | 
