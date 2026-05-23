@@ -120,23 +120,23 @@ pip install -r requirements.txt
 
 ## Output Images
 ### Following are the outputs after running app.py multiple times
-#### Initial Run
+#### 1. Initial Run
 Starts off with basic information displayed, such as the user, the message he/she sent, as well as the score allocated for the message. Only the top 3 messages are displayed.
 ![1](/assets/images/run1.png "Initial Run")
 
-#### Added reasoning
+#### 2. Added reasoning
 Added information such as reasonings as to why they are being scored high for their messages.
 ![2](/assets/images/run4.png "Added Reasonings")
 
-#### Added extra information 
+#### 3. Added extra information 
 Shows the number of messages processed, how many messages are sent to the LLM and runtime. Only top 3 messages are sent, with the rest filtered.
 ![3](/assets/images/run6.png "Statistics Display")
 
-#### Faced with anomaly where runtime takes very long
+#### 4. Faced with anomaly where runtime takes very long
 Runtime of ~44 seconds. Was observed to be stuck at generating the third reply.
 ![4](/assets/images/anomaly-run7.png "Long Runtime")
 
-#### Final Output
+#### 5. Final Output
 ![5](/assets/images/fixed-reply-run10.png "Final Output")
 
 
