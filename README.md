@@ -54,7 +54,7 @@ Ultimately, authenticity is the key for such replies.
 | Normal Gift | 60 |
 | Whale Viewer | 40 |
 | New Viewer | 30 |
-| Unanswered | 20 |
+| "Gift" mentions | 20 |
 | Requests | 10 |
 | Negative Viewer | -30 |
 <br>
@@ -96,3 +96,13 @@ pip install -r requirements.txt
 #### Run 3
 ![Sample Test Run 3](/assets/images/run3.png "Third Run")
 
+## Refinements
+### Changed encoding to UTF-8 to support Emojis
+### Rectified prompts.py to ensure that the AI replies are more realistic than robot-like
+### Added Reasoning to show why the messages are being selected
+### Added timer to display runtime
+### Added Statistics to show the details of data processing
+### Added more chat messages to sample_chat to check performance (runtime)
+### Discovered some anomaly where runtime would be unusually long (due to sequential LLM calls)
+### Changed API Request from 3 to 1
+### Fixed reply formatting
