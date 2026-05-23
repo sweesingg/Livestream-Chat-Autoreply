@@ -46,15 +46,15 @@ To be ignored as they creates toxicity and negative vibes in the session, result
 
 ## System Architecture
 Chat Stream<br>
-&nbsp&nbsp&nbsp&nbsp↓<br>
+↓<br>
 Rule-Based Scoring<br>
-    ↓<br>
+↓<br>
 Priority Ranking<br>
-    ↓<br>
+↓<br>
 Top 3 Message Selection<br>
-    ↓<br>
+↓<br>
 Single Batched LLM Request<br>
-    ↓<br>
+↓<br>
 AI Reply Generation
 
 ## Filtering Strategy
@@ -116,7 +116,6 @@ pip install -r requirements.txt
 - Open CMD/Bash
 - Enter "python app.py"
 
-
 ## Output Images
 ### Following are the outputs after running app.py multiple times
 #### Run 1
@@ -126,13 +125,13 @@ pip install -r requirements.txt
 #### Run 3
 ![Sample Test Run 3](/assets/images/run3.png "Third Run")
 
-## Refinements
-### Changed encoding to UTF-8 to support Emojis
-### Rectified prompts.py to ensure that the AI replies are more realistic than robot-like
-### Added Reasoning to show why the messages are being selected
-### Added timer to display runtime
-### Added Statistics to show the details of data processing
-### Added more chat messages to sample_chat to check performance (runtime)
-### Discovered some anomaly where runtime would be unusually long (due to sequential LLM calls)
-### Changed API Request from 3 to 1
-### Fixed reply formatting
+## Enhancements & Fixes
+- Changed encoding to UTF-8 to support Emojis
+- Rectified prompts.py to ensure that the AI replies are more realistic than robot-like
+- Added Reasoning to show why the messages are being selected
+- Added timer to display runtime
+- Added Statistics to show the details of data processing
+- Added more chat messages to sample_chat to check performance (runtime)
+- Discovered some anomaly where runtime would be unusually long (due to sequential LLM calls)
+- Changed API Request from 3 to 1
+- Fixed reply formatting
