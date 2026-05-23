@@ -31,6 +31,5 @@ def score_message(msg):
     if any(word in msg["message"] for word in negative_comments):
         score -= 30
         reasons.append("Message contains negative comments")
-    # need to cater to unanswered messages
 
     return score, reasons

@@ -98,26 +98,6 @@ The prompt intentionally avoids:
 - Long explanations
 - Overly polished AI responses
 
-## How to run:
-### 1. Create a ".env" file
-Create a '.env' file in the root folder
-
-### 2. ENTER API KEY
-Inside the '.env' file, put in the following:<br>
-OPENAI_API_KEY=your_key_here
-
-### 3. Activate virtual environment
-Enter the following in CMD/Bash:<br>
-venv\Scripts\activate
-
-### 4. Install Dependencies (in Virtual Env)
-Run the following: <br>
-pip install -r requirements.txt
-
-### 5. Run app.py
-- Open CMD/Bash
-- Enter "python app.py"
-
 ## Output Images
 ### Following are the outputs after running app.py multiple times
 #### 1. Initial Run
@@ -140,11 +120,6 @@ Runtime of ~44 seconds. Was observed to be stuck at generating the third reply.
 ![5](/assets/images/fixed-reply-run10.png "Final Output")
 
 
-
-
-
-
-
 ## Enhancements & Fixes
 - Changed encoding to UTF-8 to support Emojis
 - Rectified prompts.py to ensure that the AI replies are more realistic than robot-like
@@ -155,3 +130,31 @@ Runtime of ~44 seconds. Was observed to be stuck at generating the third reply.
 - Discovered some anomaly where runtime would be unusually long (due to sequential LLM calls)
 - Changed API Request from 3 to 1
 - Fixed reply formatting
+
+## Future Improvements
+- Real-time websocket chat ingestion
+- Toxicity moderation (Generate replies that will ease the toxicity)
+- Adaptive scoring based on engagement
+- Persistent viewer memory
+- Streamer-specific personality tuning
+- Include processing with timestamps, ensure that longer unanswered messages gets some priority
+
+## How to run:
+### 1. Create a ".env" file
+Create a '.env' file in the root folder
+
+### 2. ENTER API KEY
+Inside the '.env' file, put in the following:<br>
+OPENAI_API_KEY=your_key_here
+
+### 3. Activate virtual environment
+Enter the following in CMD/Bash:<br>
+venv\Scripts\activate
+
+### 4. Install Dependencies (in Virtual Env)
+Run the following: <br>
+pip install -r requirements.txt
+
+### 5. Run app.py
+- Open CMD/Bash
+- Enter "python app.py"
