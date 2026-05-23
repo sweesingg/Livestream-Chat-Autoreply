@@ -9,6 +9,7 @@ Add in mixes of Indonesian and English in casual conversion and with energy.
 
 5. What files do I need?
 
+6. How to make the replies generated more authentic, real time and less ai-generated replies?
 
 
 # AI Usage Log

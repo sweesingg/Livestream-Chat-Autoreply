@@ -18,7 +18,7 @@ As such, model needs to be optimised based on:
 - Community Growth
 - Stream Flow
 
-*NOTE:*
+*NOTE:*<br>
 If stream session has low number of viewers, ALL viewers should be entertained unless they're negative viewers.
 
 ## Priorities
@@ -39,10 +39,10 @@ To be ignored as they creates toxicity and negative vibes in the session, result
 
 ## Anti Robotic Replies
 To ensure that the replies are not robotic, suggestive replies will appear on the streamer's screen, allowing the streamer to select which texts they want to reply to the chat. This serves as a shortcut, as well as having the streamer ensuring that the replies are good. 
-<br>
+<br><br>
 Furthermore, these suggestive replies can be changed to customisable, allowing users to make minimal changes to it.<br>
 Nonetheless, streamers have the option to fully automate the reply, although they might be subjected to more non-humanlike replies.
-<br>
+<br><br>
 Ultimately, authenticity is the key for such replies.
 
 ## Filtering Strategy
@@ -66,7 +66,7 @@ Requirements for replies:
 - Playful and warm
 
 
-## How to use:
+## How to run:
 ### 1. Create a ".env" file
 Create a '.env' file in the root folder
 
@@ -74,10 +74,18 @@ Create a '.env' file in the root folder
 Inside the '.env' file, put in the following:<br>
 OPENAI_API_KEY=your_key_here
 
-### 3. Install Dependencies
+### 3. Activate virtual environment
+Enter the following in CMD/Bash:<br>
+venv\Scripts\activate
+
+### 3. Install Dependencies (in Virtual Env)
 Run the following: <br>
 pip install -r requirements.txt
 
 ### 4. Run app.py
 - Open CMD/Bash
 - Enter "python app.py"
+
+
+## TEST IMAGES
+![The San Juan Mountains are beautiful](/assets/images/san-juan-mountains.png "San Juan Mountains")

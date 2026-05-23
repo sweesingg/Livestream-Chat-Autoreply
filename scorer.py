@@ -19,9 +19,10 @@ def score_message(msg):
     if "gift" in msg["message"].lower():
         score += 20
     
-    if "boring" in msg["message"].lower():
+    negative_comments = ["boring", "stupid"]
+
+    if any(word in msg["message"] for word in negative_comments):
         score -= 30
-    
     # need to cater to unanswered messages
 
     return score
