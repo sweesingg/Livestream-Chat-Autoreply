@@ -1,9 +1,16 @@
 # Livestream Chat Autoreply
-For streamers to reply effectively and as real as possible
+A lightweight AI copilot prototype that prioritizes livestream chat messages and generates human-like streamer replies in real time. <br>
+<br>
+The system uses rule-based filtering to shortlist high-priority messages before sending only selected chats to the LLM, reducing latency and improving scalability.
 
-## Context
-Streamers reply to about 8% of chat messages.<br>
-Only 42% of gifts get acknowledged within 30 seconds — the goal is 80%+.
+## Problem Context
+Livestream chats move extremely quickly, often reaching 60–80 messages per minute.
+
+Streamers cannot respond to every message, so the system must:
+- prioritize high-value interactions,
+- sound natural and human,
+- avoid brute-force LLM processing on every message,
+- maintain low latency for real-time interaction.
 
 ## Introduction
 As a livestreamer, the following matters:
@@ -45,9 +52,33 @@ Nonetheless, streamers have the option to fully automate the reply, although the
 <br><br>
 Ultimately, authenticity is the key for such replies.
 
+## System Architecture
+Chat Stream
+↓
+Rule-Based Scoring
+↓
+Priority Ranking
+↓
+Top 3 Message Selection
+↓
+Single Batched LLM Request
+↓
+AI Reply Generation
+
 ## Filtering Strategy
 ### Rule-based filtering + LLM Replies
-#### Step 1: Have a rule engine to score the messages
+Instead of sending every livestream message to the LLM, the system first applies lightweight rule-based scoring.
+<br><br>
+
+This reduces:
+- API cost
+- latency
+- unnecessary LLM calls
+
+<br><br>
+
+Only shortlisted high-priority messages are sent to the LLM for response generation.
+#### Rule engine to score the messages
 | Message           |  Score  | 
 | ----------------- | ------- | 
 | High Value Gift | 100 |
@@ -60,10 +91,19 @@ Ultimately, authenticity is the key for such replies.
 <br>
 Prioritising gifts, whale users and new viewers. The rest takes lower priorities as it does not add monetization value, although they are crucial to maintain the stream flow.
 
-#### Step 2: Weigh and generate replies only for the top 3 messages
-Requirements for replies:
-- Mix of Indonesian + English 
-- Playful and warm
+## Human-Like Reply Generation
+
+The system prompt was designed to imitate real livestream behavior:
+- short reactions
+- casual Indonesian-English code switching
+- imperfect grammar
+- playful streamer energy
+- spontaneous responses
+
+The prompt intentionally avoids:
+- formal language
+- long explanations
+- overly polished AI responses
 
 
 ## How to run:
