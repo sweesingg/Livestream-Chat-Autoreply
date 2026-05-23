@@ -46,26 +46,26 @@ To be ignored as they creates toxicity and negative vibes in the session, result
 
 ## System Architecture
 Chat Stream<br>
-↓<br>
+    ↓<br>
 Rule-Based Scoring<br>
-↓<br>
+    ↓<br>
 Priority Ranking<br>
-↓<br>
+    ↓<br>
 Top 3 Message Selection<br>
-↓<br>
+    ↓<br>
 Single Batched LLM Request<br>
-↓<br>
+    ↓<br>
 AI Reply Generation
 
 ## Filtering Strategy
 ### Rule-based filtering + LLM Replies
 Instead of sending every livestream message to the LLM, the system first applies lightweight rule-based scoring.
-<br>
+
 This reduces:
 - API cost
 - latency
 - unnecessary LLM calls
-<br>
+
 Only shortlisted high-priority messages are sent to the LLM for response generation.
 
 #### Rule engine to score the messages
