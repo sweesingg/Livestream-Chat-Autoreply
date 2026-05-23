@@ -38,8 +38,11 @@ Potential future monetization; Having interactive engagement with these group of
 ### New to stream Viewers
 Even though they may be new or first time watching the stream, engaging with them will help with turning them into regular viewers and makes the stream session more engaging and welcoming to everyone. Having more viewers will increase the chances of getting gifts.
 
+### Gift Mentions
+Adds some priority for messages that contains the word "gift" as there might be potential for gifts to be involved.
+
 ### Requests from Viewers (with no gifting)
-More for keeping the viewers entertained and engaged, keeping the session fun. Lower priority as no monetization is involved.
+Keep viewers entertained and engaged. Lower priority as no monetization is involved.
 
 ### Negative/Toxic Viewers
 To be ignored as they creates toxicity and negative vibes in the session, resulting in the stream being less welcoming and lesser viewers. Unless worsened, best to be ignored.
@@ -95,7 +98,6 @@ The prompt intentionally avoids:
 - Long explanations
 - Overly polished AI responses
 
-
 ## How to run:
 ### 1. Create a ".env" file
 Create a '.env' file in the root folder
@@ -108,22 +110,40 @@ OPENAI_API_KEY=your_key_here
 Enter the following in CMD/Bash:<br>
 venv\Scripts\activate
 
-### 3. Install Dependencies (in Virtual Env)
+### 4. Install Dependencies (in Virtual Env)
 Run the following: <br>
 pip install -r requirements.txt
 
-### 4. Run app.py
+### 5. Run app.py
 - Open CMD/Bash
 - Enter "python app.py"
 
 ## Output Images
 ### Following are the outputs after running app.py multiple times
-#### Run 1
-![Sample Test Run 1](/assets/images/run1.png "First Run")
-#### Run 2
-![Sample Test Run 2](/assets/images/run2.png "Second Run")
-#### Run 3
-![Sample Test Run 3](/assets/images/run3.png "Third Run")
+#### Initial Run
+Starts off with basic information displayed, such as the user, the message he/she sent, as well as the score allocated for the message. Only the top 3 messages are displayed.
+![1](/assets/images/run1.png "Initial Run")
+
+#### Added reasoning
+Added information such as reasonings as to why they are being scored high for their messages.
+![2](/assets/images/run4.png "Added Reasonings")
+
+#### Added extra information 
+Shows the number of messages processed, how many messages are sent to the LLM and runtime. Only top 3 messages are sent, with the rest filtered.
+![3](/assets/images/run6.png "Statistics Display")
+
+#### Faced with anomaly where runtime takes very long
+Runtime of ~44 seconds. Was observed to be stuck at generating the third reply.
+![4](/assets/images/anomaly-run7.png "Long Runtime")
+
+#### Final Output
+![5](/assets/images/fixed-reply-run10.png "Final Output")
+
+
+
+
+
+
 
 ## Enhancements & Fixes
 - Changed encoding to UTF-8 to support Emojis
