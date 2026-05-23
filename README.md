@@ -46,7 +46,7 @@ To be ignored as they creates toxicity and negative vibes in the session, result
 
 ## System Architecture
 Chat Stream<br>
-    ↓<br>
+&nbsp&nbsp&nbsp&nbsp↓<br>
 Rule-Based Scoring<br>
     ↓<br>
 Priority Ranking<br>
@@ -84,16 +84,16 @@ Prioritising gifts, whale users and new viewers. The rest takes lower priorities
 ## Human-Like Reply Generation
 
 The system prompt was designed to imitate real livestream behavior:
-- short reactions
-- casual Indonesian-English code switching
-- imperfect grammar
-- playful streamer energy
-- spontaneous responses
+- Short reactions
+- Casual mix of language between Indonesian & English
+- Imperfect grammar
+- Playful streamer energy
+- Spontaneous responses
 
 The prompt intentionally avoids:
-- formal language
-- long explanations
-- overly polished AI responses
+- Formal language
+- Long explanations
+- Overly polished AI responses
 
 
 ## How to run:
