@@ -22,9 +22,22 @@ with open("sample_chat.json", "r", encoding="utf-8") as f:
 # score messages
 for chat in chats:
     chat["score"] = score_message(chat)
+    
 
 # sort
 top_messages = sorted(chats, key=lambda x: x["score"], reverse=True)[:3]
+
+# show top messages
+print("\n=== TOP 3 PRIORITY MESSAGES ===")
+
+for index, msg in enumerate(top_messages, start=1):
+
+    print(f"\n#{index}")
+    print(f"USER: {msg['user']}")
+    print(f"MESSAGE: {msg['message']}")
+    print(f"SCORE: {msg['score']}")
+
+print("\n=== GENERATING AI REPLIES ===")
 
 # generate replies
 for msg in top_messages:

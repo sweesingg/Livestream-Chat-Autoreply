@@ -87,5 +87,12 @@ pip install -r requirements.txt
 - Enter "python app.py"
 
 
-## TEST IMAGES
-![The San Juan Mountains are beautiful](/assets/images/san-juan-mountains.png "San Juan Mountains")
+## Output Images
+### Following are the outputs after running app.py multiple times
+#### Run 1
+![Sample Test Run 1](/assets/images/run1.png "First Run")
+#### Run 2
+![Sample Test Run 2](/assets/images/run2.png "Second Run")
+#### Run 3
+![Sample Test Run 3](/assets/images/run3.png "Third Run")
+
